@@ -1,0 +1,31 @@
+package gui;
+
+import com.codewithnikhil.GUIStack;
+import com.codewithnikhil.NStack;
+import javax.swing.JFrame;
+
+public class StackUse
+{
+
+    public static void main(String[] args)
+    {
+        JFrame f = new JFrame();
+        JFrame f1 = new JFrame();
+        GUIStack a = new GUIStack(f);
+        GUIStack a1 = new GUIStack(f1);
+        NStack s = new NStack();
+        NStack s1 = new NStack();
+        NStack s2 = new NStack();
+        NStack s3 = new NStack();
+        a.addToFrame(s);
+        a.addToFrame(s1);
+        a1.addToFrame(s2);
+        a1.addToFrame(s3);
+        f.setSize(500, 500);
+        f.setVisible(true);
+        f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        f1.setSize(500, 500);
+        f1.setVisible(true);
+        f1.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+    }
+}
